@@ -1,29 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
 
-<body>
+  <body>
     <h1 id="title">Survey Form</h1>
     <div id="main">
-        <p id="description">Let us know how we can improve freeCodeCamp</p>
-        <form id="survey-form">
+      <p id="description">Let us know how we can improve freeCodeCamp</p>
+      <form id="survey-form">
+        <div class="row">
+          <div class="labels">
             <label id="name-label" for="Name">*Name</label>
-            <input required type="text" name="Name" id="name" placeholder="Enter your name">
+          </div>
+          <div class="floatR">
+            <input
+              required
+              type="text"
+              name="Name"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="labels">
             <label id="email-label" for="Email">*Email</label>
-            <input required="email" type="email" name="Email" id="email" placeholder="Enter your email">
+          </div>
+          <div class="floatR">
+            <input
+              required="email"
+              type="email"
+              name="Email"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="labels">
             <label id="number-label" for="Age">*Age</label>
-            <input required type="number" name="Age" id="number" min="1" max="99" placeholder="Age">
-        </form>
+          </div>
+
+          <div class="floatR">
+            <input
+              required
+              type="number"
+              name="Age"
+              id="number"
+              min="1"
+              max="99"
+              placeholder="Age"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="labels">
+            <label id="role-label" for="Age"
+              >Which option best describes your current role?</label
+            >
+          </div>
+
+          <div class="floatR">
+            <select>
+              <option value="student">Student</option>
+              <option value="futtTime">Full time job</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="labels">
+            <label id="recommend-label" for="Age"
+              >How likely is that you would recommend freeCodeCamp to a
+              friend?</label
+            >
+          </div>
+
+          <div class="floatR">
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  name="definitely"
+                  value="definitely"
+                />Definitely
+              </li>
+              <li>
+                <input type="radio" name="definitely" value="definitely" />Maybe
+              </li>
+              <li>
+                <input type="radio" name="definitely" value="definitely" />Not
+                sure
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="labels">
+            <label for="like-ffc" id="like-label-ffc"
+              >What do you like most in FCC:</label
+            >
+          </div>
+          <div class="floatR">
+            <select name="like-ffc" id="dropdown">
+              <option value="selectOpt">Select an option</option>
+              <option value="challenge">Challenges</option>
+              <option value="project">Project</option>
+              <option value="community">Community</option>
+              <option value="openSource">Open Source</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="labels">
+            <label for=""
+              >Things that should be improved in the future (Check all that
+              apply):</label
+            >
+          </div>
+          <div class="floatR">
+            <ul>
+              <li>
+                <input type="checkbox" name="" value="fe" />Front-end Projects
+              </li>
+              <li>
+                <input type="checkbox" name="" value="be" />Back-end Projects
+              </li>
+              <li>
+                <input type="checkbox" name="" value="dt" />Data Visualization
+              </li>
+              <li><input type="checkbox" name="" value="cg" />Challenges</li>
+              <li>
+                <input type="checkbox" name="" value="opsc" />Open Source
+                Community
+              </li>
+              <li>
+                <input type="checkbox" name="" value="gh" />Gitter help rooms
+              </li>
+              <li><input type="checkbox" name="" value="video" />Videos</li>
+              <li><input type="checkbox" name="" value="cm" />City Meetups</li>
+              <li><input type="checkbox" name="" value="wiki" />Wiki</li>
+              <li><input type="checkbox" name="" value="forum" />Forum</li>
+              <li>
+                <input type="checkbox" name="" value="addCourses" />Additional
+                Courses
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="labels">
+            <label for="">Any Comments or Suggestions?</label>
+          </div>
+          <div class="floatR"><textarea rows="4" cols="40"></textarea></div>
+        </div>
+        <div class="row">
+          <input id="submit" type="submit" value="Submit" />
+        </div>
+      </form>
     </div>
-
-</body>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
